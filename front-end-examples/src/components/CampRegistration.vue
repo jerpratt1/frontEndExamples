@@ -35,7 +35,7 @@ background-size:cover;
   height: 5%;
   background-color: gray;
   border: 3px solid orangered;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 #hero-text{
