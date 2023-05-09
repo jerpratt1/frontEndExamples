@@ -8,7 +8,7 @@
       <router-link to="campregistration">Camp Registration</router-link> |
       <router-link to="kiosk">Kiosk</router-link>
     </nav>
-    <router-view/>
+    <router-view id="route"/>
   </div>
 </template>
 
@@ -19,6 +19,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  
+  }
+
+#route{
+  margin: 10px;
 }
 
 nav {
@@ -36,4 +45,12 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}  
+
 </style>

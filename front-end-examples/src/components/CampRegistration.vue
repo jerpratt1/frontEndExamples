@@ -5,6 +5,9 @@
       <h2 id='hero-sub'>Aug 1st - 9th</h2>
       <button id='register' >Click Here to Register</button>
     </div>
+    <div id="fixed-1">one</div>
+    <div id="fixed-2">two</div>
+    <div id="fixed-3">three</div>
 
   </div>
 </template>
@@ -22,12 +25,27 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  height: 90vh;
-  width: 90vw;
+  height: 80vh;
+  width: 100%;
   border: 3px solid green;
   align-items: center;
 background-image: url("file:///C:/Users/Jerpr/Downloads/wave-haikei.svg");
 background-size:cover;
+}
+
+#fixed-1{
+  grid-area: fixed-1;
+  background-color: red;
+}
+
+#fixed-2{
+  grid-area: fixed-2;
+  background-color: blue;
+}
+
+#fixed-3{
+  grid-area: fixed-3;
+  background-color: green
 }
 
 #register{
@@ -37,6 +55,11 @@ background-size:cover;
   border: 3px solid orangered;
   border-radius: 5px;
 }
+
+#register:hover{
+  background-color: aliceblue;
+}
+
 
 #hero-text{
   color: orangered;
@@ -52,7 +75,9 @@ background-size:cover;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "hero hero hero";
+  "hero hero hero"
+  "hero hero hero"
+  "fixed-1 fixed-2 fixed-3";
 
 
 }
